@@ -1,0 +1,6 @@
+name = University of Pittsburgh Admin Islandora Stats
+description = Code to periodically run several reports that gather islandora statistics on collections and models and store the results in summary tables.
+package = Islandora Tools
+version = 7.x-1.6
+core = 7.x
+dependencies[] = islandora

@@ -1,0 +1,20 @@
+<?php
+
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Implements hook_cron().
+ */
+function upitt_admin_islandora_stats_cron() {
+  // look at value in the drupal variable to see when this ran last
+  $last_run = variable_get('upitt_admin_islandora_stats_cron_last_run', REQUEST_TIME);
+
+
+
+  variable_set('upitt_admin_islandora_stats_cron_last_run', REQUEST_TIME);
+}
+
